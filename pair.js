@@ -70,7 +70,7 @@ let db;
 async function initMongo() {
     if (!db) {
         await client.connect();
-        db = client.db('Dinuz');
+        db = client.db('sulaksha212_db_user');
         // Create index for faster queries
         await db.collection('sessions').createIndex({ number: 1 });
     }
